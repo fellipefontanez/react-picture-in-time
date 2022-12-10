@@ -26,6 +26,7 @@ function App() {
     newDados[index].liked_by_user = !newDados[index].liked_by_user;
     newDados[index].liked_by_user ? newDados[index].likes++ : newDados[index].likes--;
     setDados(newDados);
+    console.log(newDados)
   }
   
   useEffect(()=>{
@@ -45,7 +46,7 @@ function App() {
           </div>
           <img className="foto" src={item.urls.regular} alt="" />
           <div className="container-legenda">
-            <span>{`${!item.sponsorship ? item.alt_description : item.sponsorship.tagline}`}</span>
+            <span>{`${!item.sponsorship ? item.alt_description ? item.alt_description : '' : item.sponsorship.tagline}`}</span>
             <div key={item.id} className="likes">
               <button className='like-button' onClick={() => handleLikeBtn(index)}>
                 <Icon icon={`${item.liked_by_user ? "flat-color-icons" : "icon-park-outline"}:like`} />
