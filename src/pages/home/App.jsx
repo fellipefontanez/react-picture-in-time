@@ -8,14 +8,17 @@ function App() {
   const url = 'https://api.unsplash.com/photos/random/?client_id=l2yXgd4UaAleOP2j7R9VneHn_66R3_444bjxNkmVRwY&count=10';
 
   const [dados , setDados] = useState([]);
+  const [erro , setErro] = useState(false);
   const getPhotos = async () =>{
     try {
       const response = await axios.get(url);
       if (response.data.length !== 0) {
+        setErro(false);
         setDados([...dados,...response.data]);
       }
     } catch (error) {
-      alert("Erro ao carregar fotos")
+        console.error("Erro: ", error);
+        setErro(true);
     }
   }
   const handleLikeBtn = (index) => {
@@ -52,7 +55,7 @@ function App() {
             </div>
           </section>
       )})}
-
+      {erro && <span>A conexão não pode ser estabelecida com o servidor. Por favor, tente novamente mais tarde</span>}
       <div className="mostrar-mais"><button onClick={getPhotos}>Ver outras</button>
       </div>
     </div>
