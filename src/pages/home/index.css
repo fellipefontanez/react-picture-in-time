@@ -39,6 +39,9 @@
     align-items: center;
     gap: .5rem;
 }
+.like-button:hover{
+    cursor: pointer;
+}
 .like-button{
     background-color: transparent;
     border: 0;

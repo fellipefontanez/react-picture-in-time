@@ -1,0 +1,46 @@
+.main{
+    height: calc(100% - 6.5rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 400px;
+    width: 90%;
+    margin: auto;
+}
+.logo{
+    width: 10rem;
+    border-radius: 50%;
+    margin: 0 0 2rem;
+}
+.title {
+    text-align: center;
+    font-size: 2rem;
+    color: #020202;
+    margin: 0;
+    padding: 0;
+    
+}
+.paragrafo{
+    text-align: center;
+    margin: 1rem 0 3rem;
+}
+
+.login_botao{
+    text-decoration: none;
+    background-color: #00BCD4;
+    border-radius: 5px;
+    width: 100%;
+    padding: .5rem 0;
+    color: #020202;
+    font-size: 1.25rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.login_botao:hover{
+    cursor: pointer;
+}
