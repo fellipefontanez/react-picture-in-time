@@ -1,87 +1,76 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
-
 .main-container{
+    margin-top: .4rem;
     height: auto;
     width: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: .4rem;
 }
 
 .container-componente-foto{
     width: 100%;
     height: 70vh;
-    border-bottom: 1px solid rgba(2, 2, 2, 0.086);
-    display: grid;
-    grid-template-rows: 3.2rem 71% 1fr;
-    box-shadow: 0 0 10px rgba(4, 4, 4, 0.129);
-    gap: .3rem;
-    overflow: hidden;
-}
-.user-container{
     display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 10px rgba(4, 4, 4, 0.129);
+    overflow: hidden;
+    max-width: 600px;
 }
 .foto{
-    width: 100%;
-    overflow: hidden;
-}
-.foto > img{
     object-fit: cover;
     height: 100%;
     overflow: hidden;
     width: 100%;
 }
 .container-legenda{
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    width: 97%;
-    margin: 0 auto;
-    gap: .4rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    width: 100%;
+    gap: 1rem;
+    font-size: 1.1rem
 }
-.legenda{
-    font-size: 1.2rem;
-    font-family: 'Roboto', sans-serif;
+.container-legenda > span::first-letter{
+    text-transform: uppercase;
 }
 .likes{
-    font-family: 'Roboto', sans-serif;
     display: flex;
-    gap: 1rem;
     align-items: center;
+    gap: .5rem;
+}
+.like-button{
+    background-color: transparent;
+    border: 0;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
 }
 .user-container{
     width: 97%;
-    margin: auto;
-    height: 100%;
-    display: grid;
-    grid-template-columns: 13% 1fr;
+    display: flex;
     gap: 1rem;
+    padding: 0.5rem;
     align-items: center;
 }
 .foto-usuario{
     border-radius: 50%;
-    width: 100%;
-    margin-top: .25rem;
+    width: 3rem;
 }
-.nome-usuario >span{
-    font-family: 'Roboto', sans-serif;
-    font-weight: bold;
-}
+
 .mostrar-mais{
     align-self: center;
-    height: 5rem;
+    height: 6rem;
     display: grid;
     place-content: center;
 }
 .mostrar-mais > button{
     border: 0;
     color: white;
-    font-family: 'Roboto' sans-serif;
-    font-size: 2.2rem;
-    background-color: black;
-    padding: .2rem;
-    height: 3.5rem;
-    width: 12rem;
+    font-size: 1.25rem;
+    background-color: royalblue;
+    padding: 0.5rem 2rem;
     border-radius: 25px;
 }
