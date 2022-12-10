@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+.footer-container{
+    width: 100%;
+    height: 2.5rem;
+    border: 1px solid rgba(12, 12, 12, 0.081);
+}
+
+.items{
+    margin: auto;
+    display: flex;
+    width: 70%;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.contato, .direitos{
+    margin-top: .5rem;
+    font-family: 'Roboto', sans-serif;
+}
+.git{
+    font-family: 'Roboto', sans-serif;
+}
