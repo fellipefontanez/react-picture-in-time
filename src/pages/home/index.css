@@ -4,23 +4,26 @@
 
 .main-container{
     height: auto;
-    overflow-y: scroll;
-    overflow-x: hidden;
     width: 100%;
     display: flex;
     flex-direction: column;
+    gap: .4rem;
 }
 
 .container-componente-foto{
     width: 100%;
-    height: 29rem;
+    height: 70vh;
     border-bottom: 1px solid rgba(2, 2, 2, 0.086);
     display: grid;
-    grid-template-rows: 83% 1fr;
+    grid-template-rows: 3.2rem 71% 1fr;
     box-shadow: 0 0 10px rgba(4, 4, 4, 0.129);
+    gap: .3rem;
+    overflow: hidden;
+}
+.user-container{
+    display: flex;
 }
 .foto{
-    height: 95%;
     width: 100%;
     overflow: hidden;
 }
@@ -34,9 +37,8 @@
     display: grid;
     grid-template-rows: 1fr 1fr;
     width: 97%;
-    margin: auto;
-    gap: .7rem;
-
+    margin: 0 auto;
+    gap: .4rem;
 }
 .legenda{
     font-size: 1.2rem;
@@ -44,4 +46,42 @@
 }
 .likes{
     font-family: 'Roboto', sans-serif;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.user-container{
+    width: 97%;
+    margin: auto;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 13% 1fr;
+    gap: 1rem;
+    align-items: center;
+}
+.foto-usuario{
+    border-radius: 50%;
+    width: 100%;
+    margin-top: .25rem;
+}
+.nome-usuario >span{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+.mostrar-mais{
+    align-self: center;
+    height: 5rem;
+    display: grid;
+    place-content: center;
+}
+.mostrar-mais > button{
+    border: 0;
+    color: white;
+    font-family: 'Roboto' sans-serif;
+    font-size: 2.2rem;
+    background-color: black;
+    padding: .2rem;
+    height: 3.5rem;
+    width: 12rem;
+    border-radius: 25px;
 }
